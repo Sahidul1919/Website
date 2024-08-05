@@ -5,10 +5,11 @@ body {
 
 #logo {
     margin-right: 95px;
-    margin-top: 20px;
+    margin-top: 15px;
     border-radius: 10px;
     padding-bottom: 10px;
     background-color: rgb(24, 180, 128);
+    border: 5px solid rgba(255, 255, 255, 0.203);
 }
 
 .empty {
@@ -21,37 +22,25 @@ body {
    
 }
 
-
-div {
-   
-    margin-top: 30px;
-}
-
-
-nav a{
-    margin-top: 30px;
+div nav button {
+    border: 5px solid rgba(255, 255, 255, 0.203);
+    font-weight: 1000;
 }
 
 div nav{
     display: flex;
     justify-content: space-around;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-
+    margin-right: 5px;
+    margin-top: 5px;
 
 }
  
 div .lineone {
     display: flex;
-    margin-left: -45px;
+    margin-left: -40px;
 }
 
-nav a:hover p{
-    cursor: pointer;
-    border-top: 10px solid rgb(0, 132, 255);
-    background-color: rgb(53, 88, 142);
-    color: aquamarine;
-}
+
 
 nav a{
     text-decoration: none;
@@ -78,10 +67,10 @@ p {
     margin-bottom: -10px;
 }
 
-nav a p{
+nav button p{
     color: white;
     background-color: rgb(92, 152, 255);
-    padding: 10px;
+    padding: +10px;
     border-radius: 5px;
     margin-top: -30px;
     margin-left: 60px;
@@ -89,19 +78,9 @@ nav a p{
     
 }
 
-.bracket {
-    background-color: rgb(47, 62, 86);
-    width: 1530px;
-    height: 50px;
-    margin-top: 50px;
-    margin-left: -20px;
-    border: 10px solid rgb(161, 161, 161);
 
-}
-
-
-#three {
-    height: 920px;
+#three{
+    height: 1010px;
 }
 
 .title {
@@ -155,3 +134,127 @@ h1 {
 #five {
     background-color: rgb(132, 200, 93);
 }
+
+.bracket {
+    background-color: rgb(47, 62, 86);
+    width: 1530px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: -20px;
+    border: 10px solid rgb(161, 161, 161);
+    
+}
+
+
+
+nav button{
+    height: 50px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+nav #three {
+    height: 50px;
+}
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+nav #one:hover{
+    background-color: rgb(62, 122, 127);
+    transform: scale(1.05)
+}
+nav #two:hover{
+    background-color: rgb(122, 62, 98);
+    transform: scale(1.05)
+}
+nav #three:hover{
+    background-color: rgb(64, 129, 122);
+    transform: scale(1.05)
+}
+nav #four:hover{
+    background-color: rgb(106, 84, 53);
+    transform: scale(1.05)
+}
+nav #five:hover{
+    background-color: rgb(103, 149, 76);
+    transform: scale(1.05)
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+    
+}
+
+.buttonOne:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: scale(1.05)
+}
+
+.buttontwo:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+
+.buttonOne { 
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: 1000;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease;
+}
+
+ .buttontwo {
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: 1000;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease;
+}
+
+
+#button1 {
+    margin-top: 70px;
+   margin-left: 1210px;
+}
+div #buttonOne2 {
+    margin-top: 70px;
+}
+div #buttonOne3 {
+    margin-top: 50px;
+}
+div #buttonOne4 {
+    margin-top: 30px;
+}
+div #buttonOne5 {
+    margin-top: 150px;
+}
+
+
+#buttontwo2 {
+    margin-top: 70px;
+}
+#buttontwo3 {
+    margin-top: 50px;
+}
+#buttontwo4 {
+    margin-top: 30px;
+}
+#buttontwo5 {
+    margin-top: 150px;
+}
+
