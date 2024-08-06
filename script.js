@@ -2,12 +2,53 @@ let buttonOne = document.querySelector(".buttonOne");
 let buttontwo = document.querySelector(".buttontwo");
 let currentPage = location.pathname.match(/index(\d+)\.html/);
 let Pagnum = currentPage ? parseInt(currentPage[1]) : 1;
+let body = document.querySelector("body");
+let box = document.getElementById("box");
+
 
 let one = document.getElementById("one");
 let two = document.getElementById("two");
 let three = document.getElementById("three");
 let four = document.getElementById("four");
 let five = document.getElementById("five");
+let six = document.getElementById("six");
+let isOn = localStorage.getItem('colorMode') === 'true';
+
+function ColorChange() {
+    isOn = !isOn;
+    localStorage.setItem('colorMode', isOn);
+
+    if (isOn) {
+        document.body.style.backgroundColor = "rgb(254, 254, 219)";
+        six.style.backgroundColor = "rgb(31, 35, 41)";
+        six.style.color = "white"
+        
+        six.textContent = "Turn Off";
+    } else {
+        document.body.style.backgroundColor = "rgb(31, 35, 41)";
+        six.style.backgroundColor = "rgb(254, 254, 219)";
+        six.style.color = "black"
+        
+        six.textContent = "Turn On";
+    }
+}
+
+if (isOn) {
+    document.body.style.backgroundColor = "rgb(254, 254, 219)";
+    six.style.backgroundColor = "rgb(31, 35, 41)";
+    six.style.color = "white"
+   
+    six.textContent = "Turn Off";
+} else {
+    document.body.style.backgroundColor = "rgb(31, 35, 41)";
+    six.style.backgroundColor = "rgb(254, 254, 219)";
+    six.style.color = "black"
+    
+    six.textContent = "Turn On";
+}
+
+six.addEventListener('click', ColorChange);
+
 
 function saveScrollPosition() {
     sessionStorage.setItem('scrollPosition', window.scrollY);
